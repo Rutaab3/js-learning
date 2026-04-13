@@ -1,0 +1,162 @@
+LESSON 1
+Variables in JavaScript
+var, let, and const
+Hoisting
+Temporal Dead Zone (TDZ)
+Scope
+Reassignment, reinitialization, and redeclaration
+
+LESSON 2
+JavaScript data types
+Dynamic typing
+typeof operator
+Truthy and falsy values
+Type coercion
+JavaScript quirks
+
+LESSON 3 
+operators
+arithmetic Operators
+assignment Operators
+comparison Operators
+logical Operators
+unary Operators
+ternary Operator (Conditional)
+typeof operator
+instanceof operator
+bitwise operators
+
+LESSON 4
+logical patterns
+if else
+else if
+switch case
+return early pattern
+
+
+
+
+The following directories contain my notes:
+C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson1
+C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson2
+C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson3
+C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson4
+C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson5
+C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson6
+Create a new folder named "notes.live" containing subfolders for each lesson and their respective topics. Convert the content from all Markdown files into HTML files, ensuring the content remains exactly the same.
+Additionally, use Bootstrap for responsiveness and include a collapsible sidebar that displays all topics within that specific lesson. All things must be designed with mobile first approach perfectly responsive on mobile. Use a little gsap for small and light animations. Use this theme allover no addition with darkmode
+:root {
+    /* Gemini Brand Core */
+    --gemini-blue: #1A73E8;
+    --gemini-blue-dark: #1557B0;
+    --gemini-purple: #8B5CF6;
+    --gemini-violet: #7C3AED;
+    --gemini-gradient: linear-gradient(135deg, #4285F4 0%, #9B72CB 50%, #D96570 100%);
+
+    /* MD3 Light Theme */
+    --md-sys-color-primary: #1A73E8;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #D3E3FD;
+    --md-sys-color-on-primary-container: #041E49;
+
+    --md-sys-color-secondary: #444746;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #C4C7C5;
+    --md-sys-color-on-secondary-container: #1C1B1F;
+
+    --md-sys-color-tertiary: #8B5CF6;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #EDE9FE;
+    --md-sys-color-on-tertiary-container: #2E1065;
+
+    --md-sys-color-error: #B3261E;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-error-container: #F9DEDC;
+    --md-sys-color-on-error-container: #410E0B;
+
+    --md-sys-color-background: #F8F9FA;
+    --md-sys-color-on-background: #1F1F1F;
+    --md-sys-color-surface: #FFFFFF;
+    --md-sys-color-surface-rgb: 255, 255, 255;
+    --md-sys-color-on-surface: #1F1F1F;
+    --md-sys-color-surface-variant: #E1E3E1;
+    --md-sys-color-on-surface-variant: #444746;
+    --md-sys-color-surface-container: #F3F4F3;
+    --md-sys-color-surface-container-high: #EDEDED;
+    --md-sys-color-surface-container-highest: #E6E6E6;
+    --md-sys-color-surface-dim: #D9D9D9;
+
+    --md-sys-color-outline: #747775;
+    --md-sys-color-outline-variant: #C4C7C5;
+
+    --md-sys-color-inverse-surface: #303030;
+    --md-sys-color-inverse-on-surface: #F1F1F1;
+    --md-sys-color-inverse-primary: #A8C7FA;
+
+    --md-sys-color-scrim: rgba(0, 0, 0, 0.32);
+    --md-sys-color-shadow: rgba(0, 0, 0, 0.15);
+
+    /* Shape System */
+    --md-sys-shape-none: 0px;
+    --md-sys-shape-extra-small: 4px;
+    --md-sys-shape-small: 8px;
+    --md-sys-shape-medium: 12px;
+    --md-sys-shape-large: 16px;
+    --md-sys-shape-extra-large: 28px;
+    --md-sys-shape-full: 9999px;
+
+    /* Elevation System */
+    --md-sys-elevation-0: none;
+    --md-sys-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --md-sys-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    --md-sys-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    --md-sys-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+    --md-sys-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+    /* Motion System */
+    --md-sys-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+    --md-sys-motion-easing-standard-decel: cubic-bezier(0, 0, 0, 1);
+    --md-sys-motion-easing-standard-accel: cubic-bezier(0.3, 0, 1, 1);
+    --md-sys-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+    --md-sys-motion-easing-emphasized-decel: cubic-bezier(0.05, 0.7, 0.1, 1.0);
+    --md-sys-motion-easing-emphasized-accel: cubic-bezier(0.3, 0, 0.8, 0.15);
+    --md-sys-motion-easing-legacy: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --md-sys-motion-duration-short4: 200ms;
+    --md-sys-motion-duration-medium2: 300ms;
+    --md-sys-motion-duration-medium4: 400ms;
+    --md-sys-motion-duration-long2: 500ms;
+    --md-sys-motion-duration-long4: 600ms;
+}
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+    --md-sys-color-background: #131314;
+    --md-sys-color-on-background: #E3E3E3;
+    --md-sys-color-surface: #1E1F20;
+    --md-sys-color-surface-rgb: 30, 31, 32;
+    --md-sys-color-on-surface: #E3E3E3;
+    --md-sys-color-surface-variant: #282A2C;
+    --md-sys-color-on-surface-variant: #C4C7C5;
+    --md-sys-color-surface-container: #282A2C;
+    --md-sys-color-surface-container-high: #303134;
+    --md-sys-color-surface-container-highest: #383A3C;
+    --md-sys-color-outline: #8E918F;
+    --md-sys-color-outline-variant: #444746;
+    --md-sys-color-primary: #A8C7FA;
+    --md-sys-color-on-primary: #062E6F;
+    --md-sys-color-primary-container: #0842A0;
+    --md-sys-color-on-primary-container: #D3E3FD;
+    --md-sys-color-secondary-container: #3A3C3B;
+    --md-sys-color-on-secondary-container: #C4C7C5;
+    --md-sys-color-tertiary: #C4AAFF;
+    --md-sys-color-tertiary-container: #5B21B6;
+    --md-sys-color-inverse-surface: #E3E3E3;
+    --md-sys-color-inverse-on-surface: #303030;
+    --md-sys-color-inverse-primary: #1A73E8;
+
+    --md-sys-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.45), 0px 1px 3px 1px rgba(0, 0, 0, 0.225);
+    --md-sys-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.45), 0px 2px 6px 2px rgba(0, 0, 0, 0.225);
+    --md-sys-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.225), 0px 1px 3px rgba(0, 0, 0, 0.45);
+    --md-sys-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.225), 0px 2px 3px rgba(0, 0, 0, 0.45);
+    --md-sys-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.225), 0px 4px 4px rgba(0, 0, 0, 0.45);
+}

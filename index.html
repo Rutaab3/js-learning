@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learning Notes</title>
+    <meta name="description" content="A focused JavaScript learning hub covering variables, scope, hoisting, types, coercion, truthy and falsy values, and operators.">
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" sizes="36x36">
+
+    <!-- Exact Google Fonts Requested -->
+    <link href="libraries/google_fonts.css" rel="stylesheet">
+    <link href="libraries/material_symbols.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="page-shell">
+                <nav class="project-nav reveal-up">
+                    <a class="navbar-brand" href="#top" aria-label="JS Learning Notes home">
+                        <img src="images/logo.webp" alt="JS Learning Notes logo" class="brand-logo"
+                            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'36\' height=\'36\'><circle cx=\'18\' cy=\'18\' r=\'18\' fill=\'%231A73E8\'/></svg>'">
+                        <span>JS Learning Notes</span>
+                    </a>
+                    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+                        <span id="themeIcon" class="material-symbols-rounded">light_mode</span>
+                    </button>
+                </nav>
+
+                <header class="hero-section" id="top">
+                    <!-- Full Hero Background -->
+                    <div class="hero-bg">
+                        <img src="images/hero.webp" alt="JavaScript learning illustration">
+                        <div class="hero-overlay"></div>
+                    </div>
+
+                    <!-- Drifting Notes Over the Background -->
+                    <!-- <div class="floating-note note-one reveal-scale">
+                <span class="material-symbols-rounded">lightbulb</span>
+                <span>Understand why `let` and `const` behave differently.</span>
+            </div>
+            <div class="floating-note note-two reveal-scale">
+                <span class="material-symbols-rounded">code_blocks</span>
+                <span>Practice operator behavior with real examples.</span>
+            </div> -->
+
+                    <!-- Centered Foreground Content -->
+                    <div class="container hero-content-wrapper hero__title-wrapper"
+                        style="position: relative; z-index: 2;">
+                        <div
+                            style="max-width: 800px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                            <div class="eyebrow reveal-up">Structured JavaScript Revision</div>
+                            <h1 class="hero-title hero__title reveal-up">Learn core JavaScript concepts with notes that
+                                stay simple and stick.</h1>
+
+                            <div class="hero-dots reveal-up" aria-hidden="true" style="justify-content: center;">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <p class="hero-copy reveal-up" style="margin-left: auto; margin-right: auto;">
+                                This project organizes beginner-friendly JavaScript lessons into focused notes on
+                                variables, scope, hoisting, data types, coercion, and operators so revision feels clear
+                                instead of messy.
+                            </p>
+
+                            <div class="hero-actions reveal-up" style="justify-content: center;">
+                                <a href="#lessons" class="btn btn-ext-fab">
+                                    Explore Lessons
+                                    <span class="material-symbols-rounded icon-sm">arrow_forward</span>
+                                </a>
+                            </div>
+
+                            <!-- Metrics grid now displayed directly under the hero text -->
+                            <div class="layout-grid reveal-up" style="margin-top: 16px; width: 100%;">
+                                <div class="grid-third">
+                                    <div class="metric-card">
+                                        <strong>3</strong>
+                                        <span>Lessons mapped</span>
+                                    </div>
+                                </div>
+                                <div class="grid-third">
+                                    <div class="metric-card">
+                                        <strong>15+</strong>
+                                        <span>Concept notes</span>
+                                    </div>
+                                </div>
+                                <div class="grid-third">
+                                    <div class="metric-card">
+                                        <strong>100%</strong>
+                                        <span>Beginner focused</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main>
+                    <section class="section-space" id="topics">
+                        <div class="container">
+                            <div class="section-head text-center reveal-up">
+                                <span class="section-kicker">Why this repo helps</span>
+                                <h2>Everything important is grouped around the concepts that confuse beginners most.
+                                </h2>
+                                <div class="linear-progress" aria-hidden="true"></div>
+                            </div>
+                            <div class="layout-grid">
+                                <div class="grid-quarter">
+                                    <article class="feature-card reveal-up" style="animation-delay: 50ms;">
+                                        <div class="feature-icon"><span class="material-symbols-rounded">layers</span>
+                                        </div>
+                                        <h3>Lesson-based structure</h3>
+                                        <p>Notes are organized into clear lessons so you can revise one concept cluster
+                                            at a time.</p>
+                                    </article>
+                                </div>
+                                <div class="grid-quarter">
+                                    <article class="feature-card reveal-up" style="animation-delay: 100ms;">
+                                        <div class="feature-icon"><span
+                                                class="material-symbols-rounded">search_insights</span></div>
+                                        <h3>Concept-first explanations</h3>
+                                        <p>Topics like hoisting, scope, and coercion are separated cleanly to reduce
+                                            overload.</p>
+                                    </article>
+                                </div>
+                                <div class="grid-quarter">
+                                    <article class="feature-card reveal-up" style="animation-delay: 150ms;">
+                                        <div class="feature-icon"><span
+                                                class="material-symbols-rounded">auto_awesome</span></div>
+                                        <h3>Real JavaScript quirks</h3>
+                                        <p>Examples highlight surprising behavior so you can spot bugs and understand
+                                            outcomes faster.</p>
+                                    </article>
+                                </div>
+                                <div class="grid-quarter">
+                                    <article class="feature-card reveal-up" style="animation-delay: 200ms;">
+                                        <div class="feature-icon"><span
+                                                class="material-symbols-rounded">menu_book</span></div>
+                                        <h3>Easy revision flow</h3>
+                                        <p>Short markdown notes make it easy to jump in, revise quickly, and return
+                                            later without friction.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-space journey-section" id="journey">
+                        <div class="container">
+                            <div class="layout-grid journey-wrapper">
+                                <div class="grid-five-twelfths">
+                                    <div class="section-head reveal-up">
+                                        <span class="section-kicker">Learning Journey</span>
+                                        <h2>Build confidence from variables to operator logic.</h2>
+                                        <p>The repository moves from foundations to behavior, then into expressions and
+                                            operators so each lesson builds on the last one naturally.</p>
+                                    </div>
+                                </div>
+                                <div class="grid-seven-twelfths">
+                                    <div class="journey-steps">
+                                        <div class="journey-step reveal-up">
+                                            <span class="step-number">01</span>
+                                            <div>
+                                                <h3>Variables and scope</h3>
+                                                <p>Start with `var`, `let`, `const`, hoisting, TDZ, and how scope
+                                                    affects access.</p>
+                                            </div>
+                                        </div>
+                                        <div class="journey-step reveal-up" style="animation-delay: 100ms;">
+                                            <span class="step-number">02</span>
+                                            <div>
+                                                <h3>Types and coercion</h3>
+                                                <p>Understand dynamic typing, `typeof`, truthy and falsy values, and
+                                                    JavaScript quirks.</p>
+                                            </div>
+                                        </div>
+                                        <div class="journey-step reveal-up" style="animation-delay: 200ms;">
+                                            <span class="step-number">03</span>
+                                            <div>
+                                                <h3>Operators in action</h3>
+                                                <p>Move into arithmetic, comparison, logical, unary, ternary, and
+                                                    assignment operators.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-space" id="lessons">
+                        <div class="container">
+                            <div class="section-head reveal-up text-center">
+                                <span class="section-kicker">Current Lessons</span>
+                                <h2>A quick look at what’s already inside the project.</h2>
+                            </div>
+                            <div class="layout-grid">
+                                <div class="grid-third">
+                                    <article class="lesson-card reveal-up" style="animation-delay: 50ms;">
+                                        <div class="lesson-badge">Lesson 1</div>
+                                        <h3>Variables and Scope</h3>
+                                        <p>Foundational rules for declarations, redeclarations, hoisting, and the
+                                            temporal dead zone.</p>
+                                        <ul class="lesson-list">
+                                            <li>Variables</li>
+                                            <li>Hoisting</li>
+                                            <li>TDZ</li>
+                                            <li>Scopes</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                                <div class="grid-third">
+                                    <article class="lesson-card reveal-up" style="animation-delay: 150ms;">
+                                        <div class="lesson-badge">Lesson 2</div>
+                                        <h3>Types and JS Behavior</h3>
+                                        <p>Practice the surprising parts of JavaScript and understand how values change
+                                            shape.</p>
+                                        <ul class="lesson-list">
+                                            <li>Data types</li>
+                                            <li>Dynamic typing</li>
+                                            <li>Truthy and falsy</li>
+                                            <li>Type coercion</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                                <div class="grid-third">
+                                    <article class="lesson-card reveal-up" style="animation-delay: 250ms;">
+                                        <div class="lesson-badge">Lesson 3</div>
+                                        <h3>Operators</h3>
+                                        <p>Learn how expressions behave with arithmetic, logical, comparison, unary, and
+                                            ternary operations.</p>
+                                        <ul class="lesson-list">
+                                            <li>Arithmetic</li>
+                                            <li>Comparison</li>
+                                            <li>Logical</li>
+                                            <li>Unary and ternary</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-space" id="start">
+                        <div class="container">
+                            <div class="cta-panel reveal-scale">
+                                <div class="layout-grid cta-wrapper">
+                                    <div class="grid-seven-twelfths">
+                                        <div class="section-head reveal-up" style="margin-bottom: 0;">
+                                            <span class="section-kicker">Start Revising</span>
+                                            <h2>Open the notes, review the fundamentals, and keep building.</h2>
+                                            <p style="margin-bottom: 32px;">This landing page gives the project a clear
+                                                front door, while the markdown lessons stay focused on actual learning.
+                                            </p>
+                                            <div class="hero-actions" style="margin-bottom: 0;">
+                                                <a href="notes/Lesson1/variable.md" class="btn btn-tonal">Open First
+                                                    Lesson</a>
+                                                <a href="README.md" class="btn btn-outline">Project README</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-five-twelfths">
+                                        <div class="cta-image-wrap reveal-up" style="animation-delay: 200ms;">
+                                            <img src="images/cta.webp" alt="JavaScript study visual" class="cta-image"
+                                                style="min-height: 250px; background: var(--md-sys-color-surface-dim); object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <center>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1 -1 34 34">
+                <title>File-type-js-official SVG Icon</title>
+                <path fill="#f5de19" d="M2 2h28v28H2z" />
+                <path
+                    d="M20.809 23.875a2.87 2.87 0 0 0 2.6 1.6c1.09 0 1.787-.545 1.787-1.3c0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964c0-1.973 1.5-3.476 3.853-3.476a3.89 3.89 0 0 1 3.742 2.107L25 18.128A1.79 1.79 0 0 0 23.311 17a1.145 1.145 0 0 0-1.259 1.128c0 .789.489 1.109 1.618 1.6l.658.282c2.236.959 3.5 1.936 3.5 4.133c0 2.369-1.861 3.667-4.36 3.667a5.06 5.06 0 0 1-4.795-2.691Zm-9.295.228c.413.733.789 1.353 1.693 1.353c.864 0 1.41-.338 1.41-1.653v-8.947h2.631v8.982c0 2.724-1.6 3.964-3.929 3.964a4.085 4.085 0 0 1-3.947-2.4Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1 -1 34 34">
+                <title>File-type-html SVG Icon</title>
+                <path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30z" />
+                <path fill="#f1662a" d="m16 27.858l8.17-2.265l1.922-21.532H16z" />
+                <path fill="#ebebeb"
+                    d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16zm0 8.027l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004z" />
+                <path fill="#fff"
+                    d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1 -1 34 34">
+                <title>File-type-css2 SVG Icon</title>
+                <path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30z" />
+                <path fill="#33a9dc" d="m16 27.858l8.17-2.265l1.922-21.532H16z" />
+                <path fill="#fff" d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16z" />
+                <path fill="#ebebeb"
+                    d="m16.019 21.218l-.014.004l-3.442-.93l-.22-2.465H9.24l.433 4.853l6.331 1.758l.015-.004z" />
+                <path fill="#fff" d="m19.827 16.151l-.372 4.139l-3.447.93v3.216l6.336-1.756l.047-.522l.537-6.007z" />
+                <path fill="#ebebeb"
+                    d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829zM16 13.191v3.091h-3.399l-.062-.695l-.14-1.567l-.074-.829z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 14 14">
+                <title>Markdown-document-programming SVG Icon</title>
+                <g fill="none">
+                    <path fill="#d7e0ff" d="M12.5 12.5a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1h6l4 4z" />
+                    <path stroke="#4147d5" stroke-linecap="round" stroke-linejoin="round"
+                        d="M12.5 12.5a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1h6l4 4z" />
+                    <path stroke="#4147d5" stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.5 10.5V6.743c0-.134.109-.243.243-.243v0c.096 0 .182.056.221.143l.754 1.675A.31.31 0 0 0 5 8.5v0a.31.31 0 0 0 .282-.182l.754-1.675a.24.24 0 0 1 .221-.143v0c.134 0 .243.109.243.243V10.5m3-4v4m-1-1l1 1l1-1" />
+                </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1 -1 34 34">
+                <title>File-type-git SVG Icon</title>
+                <path fill="#dd4c35"
+                    d="M29.472 14.753L17.247 2.528a1.8 1.8 0 0 0-2.55 0l-2.539 2.539l3.22 3.22a2.141 2.141 0 0 1 2.712 2.73l3.1 3.1a2.143 2.143 0 1 1-1.285 1.21l-2.895-2.895v7.617a2.141 2.141 0 1 1-1.764-.062V12.3a2.146 2.146 0 0 1-1.165-2.814l-3.17-3.172L2.528 14.7a1.8 1.8 0 0 0 0 2.551l12.225 12.221a1.8 1.8 0 0 0 2.55 0L29.472 17.3a1.8 1.8 0 0 0 0-2.551" />
+                <path fill="#fff"
+                    d="m12.158 5.067l3.22 3.22a2.141 2.141 0 0 1 2.712 2.73l3.1 3.1a2.143 2.143 0 1 1-1.285 1.21l-2.895-2.895v7.617a2.141 2.141 0 1 1-1.764-.062V12.3a2.146 2.146 0 0 1-1.165-2.814l-3.17-3.172" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1 -1 34 34">
+                <title>Github SVG Icon</title>
+                <path fill="currentColor"
+                    d="M16 .396c-8.839 0-16 7.167-16 16c0 7.073 4.584 13.068 10.937 15.183c.803.151 1.093-.344 1.093-.772c0-.38-.009-1.385-.015-2.719c-4.453.964-5.391-2.151-5.391-2.151c-.729-1.844-1.781-2.339-1.781-2.339c-1.448-.989.115-.968.115-.968c1.604.109 2.448 1.645 2.448 1.645c1.427 2.448 3.744 1.74 4.661 1.328c.14-1.031.557-1.74 1.011-2.135c-3.552-.401-7.287-1.776-7.287-7.907c0-1.751.62-3.177 1.645-4.297c-.177-.401-.719-2.031.141-4.235c0 0 1.339-.427 4.4 1.641a15.4 15.4 0 0 1 4-.541c1.36.009 2.719.187 4 .541c3.043-2.068 4.381-1.641 4.381-1.641c.859 2.204.317 3.833.161 4.235c1.015 1.12 1.635 2.547 1.635 4.297c0 6.145-3.74 7.5-7.296 7.891c.556.479 1.077 1.464 1.077 2.959c0 2.14-.02 3.864-.02 4.385c0 .416.28.916 1.104.755c6.4-2.093 10.979-8.093 10.979-15.156c0-8.833-7.161-16-16-16z" />
+            </svg>
+        </center>
+    </div>
+
+    <!-- Required MD3 Footer matching Google specs -->
+    <footer>
+        <span>Made by <a href="https://github.com/Rutaab3" target="_blank">Rutaab3</a></span>
+    </footer>
+
+    <!-- Preserved External JS dependencies -->
+    <script src="libraries/gsap.min.js"></script>
+    <script src="libraries/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/animate.js"></script>
+    <script src="./assets/js/practicesheet.js"></script>
+
+
+</body>
+
+</html>
