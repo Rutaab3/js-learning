@@ -2,7 +2,7 @@
     --gemini-blue: #1A73E8;
     --gemini-blue-dark: #1557B0;
     --gemini-purple: #8B5CF6;
-    --gemini-violet: #7C3AED;
+    --gemini-violet: #c09bff;
     --gemini-gradient: linear-gradient(135deg, #4285F4 0%, #9B72CB 50%, #D96570 100%);
     --md-sys-color-primary: #1A73E8;
     --md-sys-color-on-primary: #FFFFFF;
@@ -95,7 +95,10 @@
     --md-sys-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.225), 0px 2px 3px rgba(0, 0, 0, 0.45);
     --md-sys-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.225), 0px 4px 4px rgba(0, 0, 0, 0.45);
 }
-
+::selection{
+    background-color: var(--gemini-purple);
+    color: whitesmoke;
+}
 *,
 *::before,
 *::after {
@@ -283,7 +286,7 @@ button {
 }
 
 .sidebar-header {
-    background: var(--gemini-gradient);
+    background: var(--gemini-violet);
     border-radius: var(--md-sys-shape-large);
     color: var(--md-sys-color-on-primary);
     overflow: hidden;
@@ -325,7 +328,10 @@ button {
     font-size: 1.25rem;
 }
 
-.sidebar-copy,
+.sidebar-copy{
+    margin: 0.55rem 0 0;
+    color: var(--md-sys-color-inverse-on-surface);
+}
 .hero-copy,
 .lesson-card-copy,
 .topic-card-copy {
