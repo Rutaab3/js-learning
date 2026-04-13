@@ -80,7 +80,7 @@ The purpose of this project is to organize JavaScript fundamentals into simple l
 
 More topics coming soon
 
-<img src="https://img.shields.io/static/v1?label=Name&message=Muhammad+Rutaab+Ali&color=000&style=for-the-badge">
+<!-- <img src="https://img.shields.io/static/v1?label=Name&message=Muhammad+Rutaab+Ali&color=000&style=for-the-badge">
 <img src="https://img.shields.io/static/v1?label=Passionate&message=Web+Developer&color=002b02&style=for-the-badge">
 <img src="https://img.shields.io/static/v1?label=Javascript&message=Knowledge&color=2b2800&style=for-the-badge">
 <img src="https://img.shields.io/static/v1?label=ASP.NET&message=SQLSERVER&color=290018&style=for-the-badge">
@@ -122,4 +122,4 @@ More topics coming soon
 
 <img src="https://img.shields.io/static/v1?label=Obfuscated%20code%20contests%20are%20pointless%20by%20design.&message=Jeff%20Polk&color=34495e&style=for-the-badge">
 
-<img src="https://img.shields.io/static/v1?label=Specs%20and%20software%20only%20work%20perfectly%20when%20frozen.&message=Edward%20V.%20Berard&color=e67e22&style=for-the-badge">
+<img src="https://img.shields.io/static/v1?label=Specs%20and%20software%20only%20work%20perfectly%20when%20frozen.&message=Edward%20V.%20Berard&color=e67e22&style=for-the-badge"> -->
