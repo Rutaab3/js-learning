@@ -37,13 +37,13 @@ return early pattern
 
 
 The following directories contain my notes:
-C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson1
-C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson2
-C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson3
-C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson4
-C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson5
-C:\Users\Fahad\OneDrive\Documents\learning\notes.md\lesson6
-Create a new folder named "notes.live" containing subfolders for each lesson and their respective topics. Convert the content from all Markdown files into HTML files, ensuring the content remains exactly the same.
+C:\Users\Fahad\OneDrive\Documents\js-learning\notes.md\lesson1
+C:\Users\Fahad\OneDrive\Documents\js-learning\notes.md\lesson2
+C:\Users\Fahad\OneDrive\Documents\js-learning\notes.md\lesson3
+C:\Users\Fahad\OneDrive\Documents\js-learning\notes.md\lesson4
+C:\Users\Fahad\OneDrive\Documents\js-learning\notes.md\lesson5
+C:\Users\Fahad\OneDrive\Documents\js-learning\notes.md\lesson6
+Create a new folder named "notes.live" containing subfolders for each lesson and their respective topics. Convert the content from all Markdown files into HTML files, ensuring the content remains exactly the same. Don't delete or move the notes.md folder.
 Additionally, use Bootstrap for responsiveness and include a collapsible sidebar that displays all topics within that specific lesson. All things must be designed with mobile first approach perfectly responsive on mobile. Use a little gsap for small and light animations. Use this theme allover no addition with darkmode
 :root {
     /* Gemini Brand Core */
@@ -160,3 +160,6 @@ Additionally, use Bootstrap for responsiveness and include a collapsible sidebar
     --md-sys-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.225), 0px 2px 3px rgba(0, 0, 0, 0.45);
     --md-sys-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.225), 0px 4px 4px rgba(0, 0, 0, 0.45);
 }
+
+
+

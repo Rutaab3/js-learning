@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comparison | Lesson 3 | JS Notes Live</title>
+    <link rel="stylesheet" href="../../libraries/google_fonts.css">
+    <link rel="stylesheet" href="../../libraries/material_symbols.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="topic-page">
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb backdrop-orb-one"></div>
+      <div class="backdrop-orb backdrop-orb-two"></div>
+    </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="topbar-brand">
+            <a class="brand-mark" href="../index.html">JS Notes Live</a>
+            <p class="brand-copy">Responsive lesson notes built from your markdown files.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-action d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#lessonSidebar" aria-controls="lessonSidebar" aria-label="Open lesson topics">
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+                  </button>
+            <button class="icon-action" type="button" data-theme-toggle aria-label="Toggle color theme">
+              <span class="material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-shell content-shell-with-sidebar">
+        <aside class="sidebar-column">
+    <div class="offcanvas-lg offcanvas-start sidebar-shell" tabindex="-1" id="lessonSidebar" aria-labelledby="lessonSidebarLabel">
+      <div class="offcanvas-header border-0 pb-0 d-lg-none">
+        <div>
+          <p class="sidebar-kicker mb-1">Topics</p>
+          <h2 class="offcanvas-title h5 mb-0" id="lessonSidebarLabel">Lesson 3</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#lessonSidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="sidebar-panel">
+          <a class="sidebar-home" href="../index.html">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            All lessons
+          </a>
+          <div class="sidebar-header">
+            <p class="sidebar-kicker">Lesson 3</p>
+            <h2 class="sidebar-title">Lesson 3 Notes</h2>
+            <p class="sidebar-copy">9 topics converted from markdown.</p>
+          </div>
+          <nav class="topic-nav" aria-label="Lesson 3 topics">
+            <a class="sidebar-link " href="index.html">
+              <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+              Lesson overview
+            </a>
+            
+                  <a class="sidebar-link " href="arithmetic.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Arithmetic</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="assignment.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Assignment</span>
+                  </a>
+                
+                  <a class="sidebar-link is-active" href="comparison.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Comparison</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="instanceof.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>instanceof Operator</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="logical.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Logical</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="operators.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>OPERATORS</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="ternary.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Ternary</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="typeof.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>typeof Operator</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="unary.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Unary Operators</span>
+                  </a>
+                
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+               <main class="main-column">
+    <section class="topic-meta-strip reveal-card">
+      <a class="crumb-link" href="../index.html">All lessons</a>
+      <span class="crumb-sep">/</span>
+      <a class="crumb-link" href="index.html">Lesson 3</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">comparison.md</span>
+    </section>
+    <article class="note-card reveal-card">
+      <div class="note-source">
+        <span class="material-symbols-rounded" aria-hidden="true">description</span>
+        notes.md/Lesson3/comparison.md
+      </div>
+      <div class="note-prose">
+        <h1>Comparison Operators</h1>
+<p><code>Comparison operators compare two values and return a boolean (true or false) based on the comparison. They are commonly used in conditional statements to control the flow of a program.</code></p>
+<pre class="note-code"><code class="language-java">==   //Loose Equality
+===  //Strict Equality
+!=   //Loose not equal   
+!==  //Strictly not equal.
+&gt;    //Greater than 
+&lt;    //Less than.
+&gt;=   //Refers to Greater than or equal to / Less than or equal to.</code></pre>
+<p><code>Comparison operators can be categorized into two types:</code></p>
+<ol><li><em>equality operators</em> </li><li><em>relational operators</em></li></ol>
+<blockquote class="note-quote"><p><strong>Equality operators</strong></p></blockquote>
+<p>Equality operators compares values for equality. <br>
+There are 2 equality operators <code>(==) equal too</code> and <code>(===) strict equal to.</code></p>
+<pre class="note-code"><code class="language-js">5 == '5';   // true (type coercion occurs)
+
+//== just check if the value is equal and ignores their type</code></pre>
+<pre class="note-code"><code class="language-js">5 === '5';  // false (no type coercion, different types)
+
+//=== check both the value and type for equality</code></pre>
+<blockquote class="note-quote"><p>Conclusion:</p></blockquote>
+<ul><li>Use <code>===</code> for strict equality checks to avoid unexpected type coercion and bugs.</li></ul>
+<blockquote class="note-quote"><p><strong>Relational Operators</strong></p></blockquote>
+<p>Relational operators <code>(&gt;, &lt;, &gt;=, &lt;=)</code> compare values based on their order. They return true or false depending on the relationship between the values.</p>
+<pre class="note-code"><code class="language-js">5 &gt; 3;    // true
+
+// &gt; Check if first value is greater than second value</code></pre>
+<pre class="note-code"><code class="language-js">5 &lt; 3;    // false  
+
+// &lt; Check if first value is less than second value</code></pre>
+<pre class="note-code"><code class="language-js">5 &gt;= 5;   // true
+
+// &gt;= Check if first value is greater than or equal to second value</code></pre>
+<pre class="note-code"><code class="language-js">5 &lt;= 4;  // false
+
+// &lt;= Check if first value is less than or equal to second value</code></pre>
+<blockquote class="note-quote"><p><strong>Inequality Operators</strong></p></blockquote>
+<p>These <code>(!=) not equal to</code> and <code>(!==) strictly not equal to</code> operators checks if values are not equal. </p>
+<ul><li><code>!=</code> checks if values are not equal after type coercion, while </li><li><code>!==</code> checks if values are not equal without type coercion <em>(i.e., they are of different types or have different values).</em></li></ul>
+<pre class="note-code"><code class="language-js">5 != '5';   // false (type coercion occurs)</code></pre>
+<pre class="note-code"><code class="language-js">5 !== '5';  // true (no type coercion, different types)</code></pre>
+<p><code>Note:</code> <em>The output of the <code>inequality operators</code> are always opposite of the <code>equality operators</code>.</em></p>
+<pre class="note-code"><code class="language-js">5 == '5';   // true 
+5 != '5';   // false </code></pre>
+<pre class="note-code"><code class="language-js">5 === '5';   // true 
+5 !== '5';   // false </code></pre>
+<p><code>Conclusion:</code> <code>!==</code> is always preferred in modern JavaScript to avoid unexpected type coercion.</p>
+      </div>
+    </article>
+    <nav class="topic-pager">
+      <a class="pager-link" href="assignment.html">
+           <span class="material-symbols-rounded" aria-hidden="true">west</span>
+           <span>
+             <small>Previous</small>
+             Assignment
+           </span>
+         </a><a class="pager-link" href="instanceof.html">
+           <span>
+             <small>Next</small>
+             instanceof Operator
+           </span>
+           <span class="material-symbols-rounded" aria-hidden="true">east</span>
+         </a>
+    </nav>
+  </main>
+      </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libraries/gsap.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>

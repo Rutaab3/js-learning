@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCOPES | Lesson 1 | JS Notes Live</title>
+    <link rel="stylesheet" href="../../libraries/google_fonts.css">
+    <link rel="stylesheet" href="../../libraries/material_symbols.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="topic-page">
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb backdrop-orb-one"></div>
+      <div class="backdrop-orb backdrop-orb-two"></div>
+    </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="topbar-brand">
+            <a class="brand-mark" href="../index.html">JS Notes Live</a>
+            <p class="brand-copy">Responsive lesson notes built from your markdown files.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-action d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#lessonSidebar" aria-controls="lessonSidebar" aria-label="Open lesson topics">
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+                  </button>
+            <button class="icon-action" type="button" data-theme-toggle aria-label="Toggle color theme">
+              <span class="material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-shell content-shell-with-sidebar">
+        <aside class="sidebar-column">
+    <div class="offcanvas-lg offcanvas-start sidebar-shell" tabindex="-1" id="lessonSidebar" aria-labelledby="lessonSidebarLabel">
+      <div class="offcanvas-header border-0 pb-0 d-lg-none">
+        <div>
+          <p class="sidebar-kicker mb-1">Topics</p>
+          <h2 class="offcanvas-title h5 mb-0" id="lessonSidebarLabel">Lesson 1</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#lessonSidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="sidebar-panel">
+          <a class="sidebar-home" href="../index.html">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            All lessons
+          </a>
+          <div class="sidebar-header">
+            <p class="sidebar-kicker">Lesson 1</p>
+            <h2 class="sidebar-title">Lesson 1 Notes</h2>
+            <p class="sidebar-copy">5 topics converted from markdown.</p>
+          </div>
+          <nav class="topic-nav" aria-label="Lesson 1 topics">
+            <a class="sidebar-link " href="index.html">
+              <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+              Lesson overview
+            </a>
+            
+                  <a class="sidebar-link " href="hosting.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>HOSITING</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="reassign-redeclare.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Reassignmet/Reinitialization &amp; Redeclarations</span>
+                  </a>
+                
+                  <a class="sidebar-link is-active" href="scopes.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>SCOPES</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="tdz.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>temporal dead zone(tdz)</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="variable.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>VARIABLES</span>
+                  </a>
+                
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+               <main class="main-column">
+    <section class="topic-meta-strip reveal-card">
+      <a class="crumb-link" href="../index.html">All lessons</a>
+      <span class="crumb-sep">/</span>
+      <a class="crumb-link" href="index.html">Lesson 1</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">scopes.md</span>
+    </section>
+    <article class="note-card reveal-card">
+      <div class="note-source">
+        <span class="material-symbols-rounded" aria-hidden="true">description</span>
+        notes.md/Lesson1/scopes.md
+      </div>
+      <div class="note-prose">
+        <h1>SCOPES</h1>
+<p><em>Scope defines the variables nature i.e <code>global, block, functional</code></em></p>
+<p><code>GLOBAL</code>        <strong>Can be accessed any where in the code</strong><br><br>
+<code>BLOCK</code>         <strong>Can only be accessed inside a block</strong><br><br>
+<code>FUNCTIONAL</code>    <strong>Can only be accessed inside a function</strong></p>
+<p>| Variable | Global | Block | Functional |<br>
+|----------|--------|-------|------------|<br>
+| Var      | yes    | no    | yes        |<br>
+| Let      | yes    | yes   | yes        |<br>
+| Const    | yes    | yes   | yes        |</p>
+<h2>Note:</h2>
+<ol><li><em>There is no difference between the <strong>block</strong> and <strong>functional</strong> scope. Both have variable inside block {curly braces}.</em> </li></ol>
+<ol><li><em>We won't use <strong>var</strong> in examples you will learn that in the final part.</em></li></ol>
+<blockquote class="note-quote"><p>&lt;p&gt; This snippet will help you to understand what how are scopes defined.</p></blockquote>
+<pre class="note-code"><code class="language-js">let a = 20;                   //global
+{
+     let a = 10;              //blocked
+     console.log(a);
+}
+console.log(a);
+
+//The output for this snippet is
+
+10   //the variable is fetched from block
+20   //the variable is fetched from global</code></pre>
+<blockquote class="note-quote"><p>&lt;p&gt; This snippet will help you to understand what happen when you call a variable globally thats intialize and declared inside block.</p></blockquote>
+<pre class="note-code"><code class="language-js">{
+   let a = 10;
+   console.log(a);
+}
+console.log(a);
+
+
+//The output for this snippet is
+
+10                                              //the variable is fetched from block
+Uncaught ReferenceError: a is not defined the  // variable is fetched from global</code></pre>
+<p>*<em>Same happens with </em>const<em> too the variable created in block is only used inside block and can't be fetched globally</em>*</p>
+<h2>Why not to use var</h2>
+<p><strong>Var</strong> <code>donot respect the block. It is functional scoped using it can cause serious bugs e.g declaring a variable at start of the program and inside a block for example if-else statement we need the block variable to be used in block and the global variable to be used globally or where needed later but var ignores that and when its called it fetches the nearest one.</code></p>
+<pre class="note-code"><code class="language-js">var a = 20;
+{
+    var a = 3
+    if (a &gt; 3) {
+        console.log(&quot;a is smaller&quot;)
+    } else {
+        console.log(&quot;a is bigger&quot;)
+    }
+}
+console.log(a);
+
+//The output for this snippet 
+
+a is bigger     //the variable is fetched from block
+3               //the variable is fetched from block</code></pre>
+<p><code>(both values fetched from block that is a bug)</code></p>
+      </div>
+    </article>
+    <nav class="topic-pager">
+      <a class="pager-link" href="reassign-redeclare.html">
+           <span class="material-symbols-rounded" aria-hidden="true">west</span>
+           <span>
+             <small>Previous</small>
+             Reassignmet/Reinitialization &amp; Redeclarations
+           </span>
+         </a><a class="pager-link" href="tdz.html">
+           <span>
+             <small>Next</small>
+             temporal dead zone(tdz)
+           </span>
+           <span class="material-symbols-rounded" aria-hidden="true">east</span>
+         </a>
+    </nav>
+  </main>
+      </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libraries/gsap.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>

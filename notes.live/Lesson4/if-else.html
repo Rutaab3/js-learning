@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>if else | Lesson 4 | JS Notes Live</title>
+    <link rel="stylesheet" href="../../libraries/google_fonts.css">
+    <link rel="stylesheet" href="../../libraries/material_symbols.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="topic-page">
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb backdrop-orb-one"></div>
+      <div class="backdrop-orb backdrop-orb-two"></div>
+    </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="topbar-brand">
+            <a class="brand-mark" href="../index.html">JS Notes Live</a>
+            <p class="brand-copy">Responsive lesson notes built from your markdown files.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-action d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#lessonSidebar" aria-controls="lessonSidebar" aria-label="Open lesson topics">
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+                  </button>
+            <button class="icon-action" type="button" data-theme-toggle aria-label="Toggle color theme">
+              <span class="material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-shell content-shell-with-sidebar">
+        <aside class="sidebar-column">
+    <div class="offcanvas-lg offcanvas-start sidebar-shell" tabindex="-1" id="lessonSidebar" aria-labelledby="lessonSidebarLabel">
+      <div class="offcanvas-header border-0 pb-0 d-lg-none">
+        <div>
+          <p class="sidebar-kicker mb-1">Topics</p>
+          <h2 class="offcanvas-title h5 mb-0" id="lessonSidebarLabel">Lesson 4</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#lessonSidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="sidebar-panel">
+          <a class="sidebar-home" href="../index.html">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            All lessons
+          </a>
+          <div class="sidebar-header">
+            <p class="sidebar-kicker">Lesson 4</p>
+            <h2 class="sidebar-title">Lesson 4 Notes</h2>
+            <p class="sidebar-copy">5 topics converted from markdown.</p>
+          </div>
+          <nav class="topic-nav" aria-label="Lesson 4 topics">
+            <a class="sidebar-link " href="index.html">
+              <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+              Lesson overview
+            </a>
+            
+                  <a class="sidebar-link " href="else-if.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>else if</span>
+                  </a>
+                
+                  <a class="sidebar-link is-active" href="if-else.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>if else</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="logicpatterns.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Logic Patterns</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="return-early-pattern.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Return early Pattern</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="switch-case.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>switch case</span>
+                  </a>
+                
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+               <main class="main-column">
+    <section class="topic-meta-strip reveal-card">
+      <a class="crumb-link" href="../index.html">All lessons</a>
+      <span class="crumb-sep">/</span>
+      <a class="crumb-link" href="index.html">Lesson 4</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">if-else.md</span>
+    </section>
+    <article class="note-card reveal-card">
+      <div class="note-source">
+        <span class="material-symbols-rounded" aria-hidden="true">description</span>
+        notes.md/Lesson4/if-else.md
+      </div>
+      <div class="note-prose">
+        <h1>if else</h1>
+<p><em><code>if else</code> is a logic pattern where you check for a condition and execute different blocks of code based on whether the condition is true or false.</em></p>
+<pre class="note-code"><code class="language-js">if (condition) {
+    console.log(&quot;answer&quot;);
+} else {
+    console.log(&quot;answer1&quot;);
+}</code></pre>
+<blockquote class="note-quote"><p><strong>MORE COMPLEX EXAMPLE:</strong></p></blockquote>
+<pre class="note-code"><code class="language-js">// --- UNIVERSITY ADMISSION LOGIC ---
+
+//  Independent Variables (The &quot;Roots&quot;)
+let gpa = 3.8; 
+let testScore = 1000;
+let isExtraCurricular = true;
+
+// The Elite Gate (High Bar)
+// Logic: Needs BOTH high GPA AND high Test Score.
+if (gpa &gt;= 3.8 &amp;&amp; testScore &gt;= 1400) {
+    console.log(&quot;the student is accepted&quot;);
+} 
+//  The Fallback (Safety Net)
+else {
+    // The Standard Gate (Nested inside the else)
+    // Logic: Needs GPA of 3.0+ AND (either a good score OR activities).
+    if (gpa &gt;= 3.0 &amp;&amp; (testScore &gt;= 1100 || isExtraCurricular === true)) {
+        console.log(&quot;the student is waitlisted&quot;);
+    } 
+    // The Default (If all gates are locked)
+    else {
+        console.log(&quot;the student is rejected&quot;);
+    }
+}
+
+/* NOTE
+   - This uses &quot;Nested If/Else&quot; to create a hierarchy.
+   - The computer stops at the FIRST 'true' path it finds.
+   - Independent Variables: gpa and testScore don't affect each other, 
+     but the BOSS (the if statement) looks at both to decide.
+*/</code></pre>
+<blockquote class="note-quote"><p><strong>EXPLANATION:</strong></p></blockquote>
+<ul><li>The first <code>if</code> checks for the highest standard (Elite Gate). If true, it accepts the student immediately.</li><li>If the first condition is false, it goes to the <code>else</code>, which contains another <code>if</code> (Standard Gate) that checks for a lower standard. If this is true, it waitlists the student.</li><li>If both conditions are false, it goes to the final <code>else</code>, which rejects the student.</li></ul>
+      </div>
+    </article>
+    <nav class="topic-pager">
+      <a class="pager-link" href="else-if.html">
+           <span class="material-symbols-rounded" aria-hidden="true">west</span>
+           <span>
+             <small>Previous</small>
+             else if
+           </span>
+         </a><a class="pager-link" href="logicpatterns.html">
+           <span>
+             <small>Next</small>
+             Logic Patterns
+           </span>
+           <span class="material-symbols-rounded" aria-hidden="true">east</span>
+         </a>
+    </nav>
+  </main>
+      </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libraries/gsap.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>

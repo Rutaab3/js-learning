@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unary Operators | Lesson 3 | JS Notes Live</title>
+    <link rel="stylesheet" href="../../libraries/google_fonts.css">
+    <link rel="stylesheet" href="../../libraries/material_symbols.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="topic-page">
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb backdrop-orb-one"></div>
+      <div class="backdrop-orb backdrop-orb-two"></div>
+    </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="topbar-brand">
+            <a class="brand-mark" href="../index.html">JS Notes Live</a>
+            <p class="brand-copy">Responsive lesson notes built from your markdown files.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-action d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#lessonSidebar" aria-controls="lessonSidebar" aria-label="Open lesson topics">
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+                  </button>
+            <button class="icon-action" type="button" data-theme-toggle aria-label="Toggle color theme">
+              <span class="material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-shell content-shell-with-sidebar">
+        <aside class="sidebar-column">
+    <div class="offcanvas-lg offcanvas-start sidebar-shell" tabindex="-1" id="lessonSidebar" aria-labelledby="lessonSidebarLabel">
+      <div class="offcanvas-header border-0 pb-0 d-lg-none">
+        <div>
+          <p class="sidebar-kicker mb-1">Topics</p>
+          <h2 class="offcanvas-title h5 mb-0" id="lessonSidebarLabel">Lesson 3</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#lessonSidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="sidebar-panel">
+          <a class="sidebar-home" href="../index.html">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            All lessons
+          </a>
+          <div class="sidebar-header">
+            <p class="sidebar-kicker">Lesson 3</p>
+            <h2 class="sidebar-title">Lesson 3 Notes</h2>
+            <p class="sidebar-copy">9 topics converted from markdown.</p>
+          </div>
+          <nav class="topic-nav" aria-label="Lesson 3 topics">
+            <a class="sidebar-link " href="index.html">
+              <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+              Lesson overview
+            </a>
+            
+                  <a class="sidebar-link " href="arithmetic.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Arithmetic</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="assignment.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Assignment</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="comparison.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Comparison</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="instanceof.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>instanceof Operator</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="logical.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Logical</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="operators.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>OPERATORS</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="ternary.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Ternary</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="typeof.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>typeof Operator</span>
+                  </a>
+                
+                  <a class="sidebar-link is-active" href="unary.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Unary Operators</span>
+                  </a>
+                
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+               <main class="main-column">
+    <section class="topic-meta-strip reveal-card">
+      <a class="crumb-link" href="../index.html">All lessons</a>
+      <span class="crumb-sep">/</span>
+      <a class="crumb-link" href="index.html">Lesson 3</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">unary.md</span>
+    </section>
+    <article class="note-card reveal-card">
+      <div class="note-source">
+        <span class="material-symbols-rounded" aria-hidden="true">description</span>
+        notes.md/Lesson3/unary.md
+      </div>
+      <div class="note-prose">
+        <h1>Unary Operators</h1>
+<p><code>Unary operators works on one value at a time only. They perform various operations such as negation, incrementing, and decrementing. Unary operators can be used in both prefix and postfix forms.</code></p>
+<pre class="note-code"><code class="language-java">+        //unary plus 
+-        //unary negation 
+typeof   //type operator
+++       //increment
+--       //decrement</code></pre>
+<blockquote class="note-quote"><p><code>unary plus</code> is used to convert a <code>value to a number</code>. If the operand is not already a number, it will attempt to convert it to one. For example:</p></blockquote>
+<pre class="note-code"><code class="language-js">let a = &quot;5&quot;;
+let b = +a; // b is now the number 5</code></pre>
+<blockquote class="note-quote"><p><code>unary negation</code> is used to negate a <code>number</code>. It changes the sign of the operand. For example:</p></blockquote>
+<pre class="note-code"><code class="language-js">let a = 5;
+let b = -a; // b is now -5</code></pre>
+<blockquote class="note-quote"><p><code>typeof</code> is a type operator that <code>returns a string</code> indicating the <code>type of the operand</code>. It can be used to check the type of a <code>variable</code> or <code>expression</code>. For example:</p></blockquote>
+<pre class="note-code"><code class="language-js">let a = 5;
+console.log(typeof a); // returns &quot;number&quot;
+let b = &quot;Hello&quot;;
+console.log(typeof b); // returns &quot;string&quot;</code></pre>
+<p><strong><code>increment</code> and <code>decrement</code> operators have two forms:</strong></p>
+<blockquote class="note-quote"><p><code>prefix</code> form: </p></blockquote>
+<ul><li>The operator is placed before the operand e.g., <code>++a</code> or <code>--a</code>. </li><li>Its increments or decrements the value of the operand before it is used in an expression.</li></ul>
+<pre class="note-code"><code class="language-js">let a = 5;
+let b = ++a; // a is now 6, b gets the value of a (6)
+console.log(a,b); // returns 6 6</code></pre>
+<pre class="note-code"><code class="language-js">let a = 5;
+let b = --a; // a is now 4, b gets the value of a (4)
+console.log(a,b); // returns 4 4</code></pre>
+<blockquote class="note-quote"><p><code>postfix</code> form </p></blockquote>
+<ul><li>The operator is placed after the operand (e.g., <code>a++</code> or <code>a--</code>). </li><li>It increments or decrements the value of the operand after it is used in an expression.</li></ul>
+<pre class="note-code"><code class="language-js">let a = 5;
+let b = a++; // Postfix increment: b gets the value of a (5), then a is incremented to 6
+console.log(a,b); // returns 6 5</code></pre>
+<pre class="note-code"><code class="language-js">let a = 5;
+let b = a--; // Postfix decrement: b gets the value of a (5), then a is decremented to 4
+console.log(a,b); // returns 4 5</code></pre>
+<p>NOW let's see the difference between prefix and postfix increment in a more complex expression:</p>
+<pre class="note-code"><code class="language-js">let a = 5;
+let b = ++a + a++; // Prefix increment: a becomes 6, then b gets 6 + 6 (12), then a becomes 7   
+console.log(a,b); // returns 7 12</code></pre>
+<blockquote class="note-quote"><p>In this example </p></blockquote>
+<ul><li>The prefix <code>++a</code> is <code>incrementing</code> <code>a</code> to <code>6</code> before it is used in the expression,</li><li>Then the value of <code>a</code> <code>(which is now 6)</code> is used in the expression for the <code>postfix</code> <code>increment</code> <code>a++</code>. </li><li>After the expression is evaluated, a is <code>incremented</code> to <code>7</code>. Therefore, <code>b</code> gets the value of <code>12 (6 + 6)</code> and <code>a</code> ends up being <code>7</code> after both increments are applied.</li></ul>
+<blockquote class="note-quote"><p><strong><code>CONCLUSION</code>:</strong></p></blockquote>
+<p><em>in simple words <code>prefix</code> imediately perfoems the <code>increment</code> or <code>decrement</code> while <code>postfix</code> performs the <code>increment</code> or <code>decrement</code> after the current value is used in the expression.</em></p>
+      </div>
+    </article>
+    <nav class="topic-pager">
+      <a class="pager-link" href="typeof.html">
+           <span class="material-symbols-rounded" aria-hidden="true">west</span>
+           <span>
+             <small>Previous</small>
+             typeof Operator
+           </span>
+         </a><span class="pager-link pager-link-disabled">
+           <span>
+             <small>Next</small>
+             End of lesson
+           </span>
+           <span class="material-symbols-rounded" aria-hidden="true">east</span>
+         </span>
+    </nav>
+  </main>
+      </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libraries/gsap.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>

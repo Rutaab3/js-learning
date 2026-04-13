@@ -380,4 +380,22 @@
 // If true, log "Adding extra sugar...".
 // (You can use a simple if or a ternary here, since it's a specific check inside that one case).
 // Go for it. No hints this time. show me how you handle the "Family Pot" grouping!
-
+// let sizeCode = "xl".toUpperCase();
+// let wantsSugar = false;
+// switch(sizeCode){
+//    case "S":
+//    console.log("Small Tea - 50 PKR");
+//    break;
+//    case "M":
+//    console.log("Medium Tea - 100 PKR");
+//    break;
+//    case "L":
+//    console.log("Large Tea - 150 PKR"); wantsSugar ? console.log("Adding extra sugar...") : false;
+//    break;
+//    case "XXL":
+//    case "XL":   
+//    console.log("Family pot - 500 PKR");
+//    break;
+//    default:
+//       console.log("invalid Size")
+// }

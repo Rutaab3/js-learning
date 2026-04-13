@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DATATYPES | Lesson 2 | JS Notes Live</title>
+    <link rel="stylesheet" href="../../libraries/google_fonts.css">
+    <link rel="stylesheet" href="../../libraries/material_symbols.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="topic-page">
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb backdrop-orb-one"></div>
+      <div class="backdrop-orb backdrop-orb-two"></div>
+    </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="topbar-brand">
+            <a class="brand-mark" href="../index.html">JS Notes Live</a>
+            <p class="brand-copy">Responsive lesson notes built from your markdown files.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-action d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#lessonSidebar" aria-controls="lessonSidebar" aria-label="Open lesson topics">
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+                  </button>
+            <button class="icon-action" type="button" data-theme-toggle aria-label="Toggle color theme">
+              <span class="material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-shell content-shell-with-sidebar">
+        <aside class="sidebar-column">
+    <div class="offcanvas-lg offcanvas-start sidebar-shell" tabindex="-1" id="lessonSidebar" aria-labelledby="lessonSidebarLabel">
+      <div class="offcanvas-header border-0 pb-0 d-lg-none">
+        <div>
+          <p class="sidebar-kicker mb-1">Topics</p>
+          <h2 class="offcanvas-title h5 mb-0" id="lessonSidebarLabel">Lesson 2</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#lessonSidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="sidebar-panel">
+          <a class="sidebar-home" href="../index.html">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            All lessons
+          </a>
+          <div class="sidebar-header">
+            <p class="sidebar-kicker">Lesson 2</p>
+            <h2 class="sidebar-title">Lesson 2 Notes</h2>
+            <p class="sidebar-copy">6 topics converted from markdown.</p>
+          </div>
+          <nav class="topic-nav" aria-label="Lesson 2 topics">
+            <a class="sidebar-link " href="index.html">
+              <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+              Lesson overview
+            </a>
+            
+                  <a class="sidebar-link is-active" href="datatypes.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>DATATYPES</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="dynamic-typing.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>DYNAMIC TYPING</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="quirks-in-js.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>QUIRKS IS JAVASCRIPT</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="truthy-and-falsy-values.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Truthy and Falsy Values</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="type-coercion.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Type Coercion (Auto Conversion)</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="typeof-operator.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>(typeof) OPERATOR</span>
+                  </a>
+                
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+               <main class="main-column">
+    <section class="topic-meta-strip reveal-card">
+      <a class="crumb-link" href="../index.html">All lessons</a>
+      <span class="crumb-sep">/</span>
+      <a class="crumb-link" href="index.html">Lesson 2</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">datatypes.md</span>
+    </section>
+    <article class="note-card reveal-card">
+      <div class="note-source">
+        <span class="material-symbols-rounded" aria-hidden="true">description</span>
+        notes.md/Lesson2/datatypes.md
+      </div>
+      <div class="note-prose">
+        <h1>DATATYPES</h1>
+<p><code>In JavaScript, every value has a type. These types define what kind of data is being stored — a number, text, boolean, object, etc. There are two categories:</code></p>
+<p><strong>Primitive types – stored directly.</strong> <br><br>
+<strong>Reference types – stored as memory references.</strong></p>
+<h2>Primitive Data Types</h2>
+<p><code>String → Text</code></p>
+<pre class="note-code"><code class="language-js">   &quot;hello&quot; , 'Rutaab'</code></pre>
+<p><code>Number → Any numeric value</code></p>
+<pre class="note-code"><code class="language-js">   3 , -99 , 3.14</code></pre>
+<p><code>Boolean → True or false</code></p>
+<pre class="note-code"><code class="language-js">   true , false</code></pre>
+<p><code>Undefined → Variable declared but not assigned</code></p>
+<pre class="note-code"><code class="language-js">   let x;   //x is undefined</code></pre>
+<p><code>Null → Intentional empty value</code></p>
+<pre class="note-code"><code class="language-js">   let x = null;</code></pre>
+<p><code>Symbol → Unique identifier(rarely used)</code></p>
+<pre class="note-code"><code class="language-js">   Symbol()</code></pre>
+<p><code>BigInt → Very large integers</code> </p>
+<pre class="note-code"><code class="language-js">   123456789012345678901234567890n    </code></pre>
+<h2>Reference Data Types</h2>
+<p><code>Object</code></p>
+<pre class="note-code"><code class="language-js">   { name: &quot;Rutaab&quot;, age: 21 }</code></pre>
+<p><code>Array</code></p>
+<pre class="note-code"><code class="language-js">   [10, 20, 30]</code></pre>
+<p><code>Function</code></p>
+<pre class="note-code"><code class="language-js">   function greet()
+   {
+      code
+   }</code></pre>
+      </div>
+    </article>
+    <nav class="topic-pager">
+      <span class="pager-link pager-link-disabled">
+           <span class="material-symbols-rounded" aria-hidden="true">west</span>
+           <span>
+             <small>Previous</small>
+             Start of lesson
+           </span>
+         </span><a class="pager-link" href="dynamic-typing.html">
+           <span>
+             <small>Next</small>
+             DYNAMIC TYPING
+           </span>
+           <span class="material-symbols-rounded" aria-hidden="true">east</span>
+         </a>
+    </nav>
+  </main>
+      </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libraries/gsap.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>

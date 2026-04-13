@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>(typeof) OPERATOR | Lesson 2 | JS Notes Live</title>
+    <link rel="stylesheet" href="../../libraries/google_fonts.css">
+    <link rel="stylesheet" href="../../libraries/material_symbols.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="topic-page">
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb backdrop-orb-one"></div>
+      <div class="backdrop-orb backdrop-orb-two"></div>
+    </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="topbar-brand">
+            <a class="brand-mark" href="../index.html">JS Notes Live</a>
+            <p class="brand-copy">Responsive lesson notes built from your markdown files.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-action d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#lessonSidebar" aria-controls="lessonSidebar" aria-label="Open lesson topics">
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+                  </button>
+            <button class="icon-action" type="button" data-theme-toggle aria-label="Toggle color theme">
+              <span class="material-symbols-rounded" data-theme-icon aria-hidden="true">dark_mode</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-shell content-shell-with-sidebar">
+        <aside class="sidebar-column">
+    <div class="offcanvas-lg offcanvas-start sidebar-shell" tabindex="-1" id="lessonSidebar" aria-labelledby="lessonSidebarLabel">
+      <div class="offcanvas-header border-0 pb-0 d-lg-none">
+        <div>
+          <p class="sidebar-kicker mb-1">Topics</p>
+          <h2 class="offcanvas-title h5 mb-0" id="lessonSidebarLabel">Lesson 2</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#lessonSidebar" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="sidebar-panel">
+          <a class="sidebar-home" href="../index.html">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            All lessons
+          </a>
+          <div class="sidebar-header">
+            <p class="sidebar-kicker">Lesson 2</p>
+            <h2 class="sidebar-title">Lesson 2 Notes</h2>
+            <p class="sidebar-copy">6 topics converted from markdown.</p>
+          </div>
+          <nav class="topic-nav" aria-label="Lesson 2 topics">
+            <a class="sidebar-link " href="index.html">
+              <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+              Lesson overview
+            </a>
+            
+                  <a class="sidebar-link " href="datatypes.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>DATATYPES</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="dynamic-typing.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>DYNAMIC TYPING</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="quirks-in-js.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>QUIRKS IS JAVASCRIPT</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="truthy-and-falsy-values.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Truthy and Falsy Values</span>
+                  </a>
+                
+                  <a class="sidebar-link " href="type-coercion.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>Type Coercion (Auto Conversion)</span>
+                  </a>
+                
+                  <a class="sidebar-link is-active" href="typeof-operator.html">
+                    <span class="material-symbols-rounded" aria-hidden="true">article</span>
+                    <span>(typeof) OPERATOR</span>
+                  </a>
+                
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+               <main class="main-column">
+    <section class="topic-meta-strip reveal-card">
+      <a class="crumb-link" href="../index.html">All lessons</a>
+      <span class="crumb-sep">/</span>
+      <a class="crumb-link" href="index.html">Lesson 2</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">typeof-operator.md</span>
+    </section>
+    <article class="note-card reveal-card">
+      <div class="note-source">
+        <span class="material-symbols-rounded" aria-hidden="true">description</span>
+        notes.md/Lesson2/typeof-operator.md
+      </div>
+      <div class="note-prose">
+        <h1>(typeof) OPERATOR</h1>
+<p><em>To determine datatype of any value in javascript we use typeof operator.</em></p>
+<h2>Examples</h2>
+<ol><li><em>typeof &quot;Rutaab&quot;</em>                <code>string</code></li><li><em>typeof 99</em>                      <code>number</code></li><li><em>typeof true</em>                    <code>boolean</code></li><li><em>typeof undefined</em>               <code>undefined</code></li><li><em>typeof null</em>                    <code>object â† known bug</code></li><li><em>typeof [  ]</em>                    <code>object</code></li><li><em>typeof {  }</em>                    <code>object</code></li><li><em>typeof function(  ){  }</em>        <code>function</code></li></ol>
+<h3>Here is a small snippet to show how it works!</h3>
+<p><strong>variables</strong></p>
+<pre class="note-code"><code class="language-js">let a = &quot;Rutaab&quot;
+let a = 99
+let a = true</code></pre>
+<p><strong>check typeof</strong></p>
+<pre class="note-code"><code class="language-js">console.log(typeof a)
+console.log(typeof b)
+console.log(typeof c)</code></pre>
+<p><strong>output</strong></p>
+<pre class="note-code"><code class="language-js">a = string
+b = number
+c = boolean</code></pre>
+      </div>
+    </article>
+    <nav class="topic-pager">
+      <a class="pager-link" href="type-coercion.html">
+           <span class="material-symbols-rounded" aria-hidden="true">west</span>
+           <span>
+             <small>Previous</small>
+             Type Coercion (Auto Conversion)
+           </span>
+         </a><span class="pager-link pager-link-disabled">
+           <span>
+             <small>Next</small>
+             End of lesson
+           </span>
+           <span class="material-symbols-rounded" aria-hidden="true">east</span>
+         </span>
+    </nav>
+  </main>
+      </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libraries/gsap.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>
