@@ -346,11 +346,28 @@ button {
     display: grid;
     gap: 0.7rem;
     grid-template-columns: 1.5rem 1fr;
+    min-width: 0;
     padding: 0.85rem 0.9rem;
     transition:
         transform var(--md-sys-motion-duration-short4) var(--md-sys-motion-easing-standard),
         background-color var(--md-sys-motion-duration-short4) var(--md-sys-motion-easing-standard),
         border-color var(--md-sys-motion-duration-short4) var(--md-sys-motion-easing-standard);
+}
+
+.sidebar-link span:last-child,
+.hero-title,
+.sidebar-title,
+.lesson-card-title,
+.crumb-current,
+.note-source,
+.note-prose h1,
+.pager-link {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.pager-link {
+    white-space: normal;
 }
 
 .sidebar-link:hover,
