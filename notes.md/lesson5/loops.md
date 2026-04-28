@@ -21,7 +21,7 @@ for (let i = 1; i <= 10; i++) {
 }
 output: 1 2 3 4 5 6 7 8 9 10
 
-//Q. Now why the loops is best?
+//Q. Why the loops is best?
 //A. Imagine we were given to write 1 - 10. We wrote it without loops. Its okay right! Until its said that you have to write to 1 - 1000. NOw thats a problem. This is why we use loops, by just altering the 2 points "starting" abd "ending" we are good to go.
 ```
 
@@ -33,28 +33,49 @@ output: 1 2 3 4 5 6 7 8 9 10
 - for in
 - for of
 
+> Cheat Codes:
+- break (Stop everything)
+- continue (Skip this turn)
+- even (% 2 === 0)
+- odd (% 2 !== 0)
+- divisible (% n === 0)
+- not divisible (% n !== 0)
+- Nested (Loops within loops for 2D patterns)
+- Infinite (The danger zone)
+
 > `for loop`
 is a loop that is used to execute the block of code when these conditions are met.
-- we know the starting point.
-- we know the ending point.
-- we know that how will it proceed from starting to ending point. (increment or decrement)
+- start.
+- end.
+- change. (increment or decrement)
 ```js
-for(start; end; increment/decrement) {
+for(start; end; change) {
     // code to be executed
 }
 ```
 
 > `while-loop`
 is a loop that is used to execute the block of code when these conditions are met.
-- we know the starting point.
-- we don't know the ending point or to stop on a certain cndition that we don't know when will be met.
-- we know that how will it proceed from starting to ending point. (increment or decrement) 
+- start.
+- end (but unknown).
+- change. (increment or decrement)
 ```js
 start
-while (condition) {
+while (end) {
     // code to be executed
-    increment/decrement
+    change
 }
 ```
-
 > `do while loop`
+is a loop that is used to execute the block of code when these conditions are met.
+- start.
+- execute code block (this happens first!).
+- change. (increment or decrement)
+- end (checked last).
+```js
+start
+do {
+    // code to be executed
+    change
+} while (end);
+```

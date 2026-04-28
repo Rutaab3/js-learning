@@ -1,18 +1,18 @@
 LESSON 1
-Variables in JavaScript
+variables in javaScript
 var, let, and const
-Hoisting
-Temporal Dead Zone (TDZ)
-Scope
-Reassignment, reinitialization, and redeclaration
+hoisting
+temporal Dead Zone (TDZ)
+scope
+reassignment, reinitialization, and redeclaration
 
 LESSON 2
-JavaScript data types
-Dynamic typing
+javaScript data types
+dynamic typing
 typeof operator
-Truthy and falsy values
-Type coercion
-JavaScript quirks
+truthy and falsy values
+type coercion
+javaScript quirks
 
 LESSON 3 
 operators
@@ -35,7 +35,9 @@ return early pattern
 
 LESSON5
 loops
-
+for
+while
+do while
 
 
 
