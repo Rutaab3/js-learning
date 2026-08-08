@@ -35,5 +35,3 @@
     * If yes, log "Welcome Admin". 
     * If user matches but password doesn't, log "Wrong Password". 
     * Otherwise, log "User Not Found".
-
-**Pick 2 or 3 to solve tonight, or save them all for your morning coffee! Which one are you tackling first?**

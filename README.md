@@ -1,3 +1,33 @@
+                    
+
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
 # JavaScript Learning Notes
 
 A small JavaScript learning project built around lesson-based notes, a custom landing page, and a generated HTML notes site.
