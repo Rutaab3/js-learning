@@ -48,5 +48,11 @@ let remainder = 5 % 3; // remainder is 2
 let power = 5 ** 3; // power is 125
 ```
 
+---
+
+**Next →** [assignment.md](assignment.md)
+
+🏠 **Back to README** [README.md](../../README.md)
+
 
 

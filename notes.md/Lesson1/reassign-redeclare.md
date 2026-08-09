@@ -114,4 +114,10 @@ student = {};
 console.log(student);
 
 output = `Uncaught TypeError: Assignment to constant variable.`
+
+---
+
+**Next →** [hosting.md](hosting.md)
+
+🏠 **Back to README** [README.md](../../README.md)
 ```

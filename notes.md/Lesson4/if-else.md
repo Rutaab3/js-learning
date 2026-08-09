@@ -46,3 +46,9 @@ else {
 - The first `if` checks for the highest standard (Elite Gate). If true, it accepts the student immediately.
 - If the first condition is false, it goes to the `else`, which contains another `if` (Standard Gate) that checks for a lower standard. If this is true, it waitlists the student.
 - If both conditions are false, it goes to the final `else`, which rejects the student.
+
+---
+
+**Next →** [else-if.md](else-if.md)
+
+🏠 **Back to README** [README.md](../../README.md)

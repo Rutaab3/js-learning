@@ -64,3 +64,9 @@ switch(sizeCode) {
 - If `sizeCode` is "L", it logs "Large Tea - 150 PKR" and then checks if `wantsSugar` is true to log "Adding extra sugar...". The `break` then prevents further cases from executing.
 - If `sizeCode` is "XXL" or "XL", it logs "Family pot - 500 PKR" and then `break` prevents further cases from executing.
 - If `sizeCode` does not match any of the cases, the `default` case executes, logging "Invalid Size Selection".
+
+---
+
+**Next →** [return-early-pattern.md](return-early-pattern.md)
+
+🏠 **Back to README** [README.md](../../README.md)

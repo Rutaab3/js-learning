@@ -133,3 +133,9 @@ instanceof: // Example: obj instanceof Object
 ```
 
 `Pro-tip:` Be careful with operator precedence (the order in which they are calculated). Just like in school math, multiplication happens before addition. You can use parentheses () to force the order you want!
+
+---
+
+**Next →** [arithmetic.md](arithmetic.md)
+
+🏠 **Back to README** [README.md](../../README.md)

@@ -42,3 +42,9 @@ console.log(power(isGeneratorFueled,isGridOn,solarBatteryLevel,currentTemp));
 - The third `if` check if the grid is off, if true it then checks solar battery level > 20% switches to Solar imediately.
 - The fourth `if` check if the grid is off, if true it then checks generator and if it has fuel switches to Generator imediately.
 - If the Grid is off, Battery is dead (<=20), and Generator has no fuel, return "TOTAL BLACKOUT".
+
+---
+
+**Next →** [loops.md](../lesson5/loops.md)
+
+🏠 **Back to README** [README.md](../../README.md)

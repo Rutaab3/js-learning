@@ -38,3 +38,9 @@ a = string
 b = number
 c = boolean
 ```
+
+---
+
+**Next →** [truthy-and-falsy-values.md](truthy-and-falsy-values.md)
+
+🏠 **Back to README** [README.md](../../README.md)

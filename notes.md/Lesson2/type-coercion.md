@@ -38,3 +38,9 @@ undefined + 1
 Output: NaN
 //undefined is not a number hence NaN
 ```
+
+---
+
+**Next →** [quirks-in-js.md](quirks-in-js.md)
+
+🏠 **Back to README** [README.md](../../README.md)

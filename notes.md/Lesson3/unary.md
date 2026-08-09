@@ -83,3 +83,9 @@ console.log(a,b); // returns 7 12
 
 > **`CONCLUSION`:**
 *in simple words `prefix` imediately perfoems the `increment` or `decrement` while `postfix` performs the `increment` or `decrement` after the current value is used in the expression.*
+
+---
+
+**Next →** [typeof.md](typeof.md)
+
+🏠 **Back to README** [README.md](../../README.md)

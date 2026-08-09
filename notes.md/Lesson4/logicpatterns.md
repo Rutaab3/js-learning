@@ -90,3 +90,9 @@ function (condition) {
 - `switch:` Best for specific, fixed values (e.g., color === "red"). Much cleaner than long else-if chains.
 
 - `return early:` A function-only pattern. Catch errors/edge cases at the top to keep the main logic "flat" and readable.
+
+---
+
+**Next →** [if-else.md](if-else.md)
+
+🏠 **Back to README** [README.md](../../README.md)

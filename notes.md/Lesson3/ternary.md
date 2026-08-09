@@ -29,3 +29,9 @@ false (for example, if age were 16)
 //it would return "No".
 ```
 > *The ternary operator is often used for simple conditional assignments and can make code more concise and readable when used appropriately. However, for more complex conditions or multiple branches, traditional if-else statements may be clearer.*
+
+---
+
+**Next →** [bitwise.md](bitwise.md)
+
+🏠 **Back to README** [README.md](../../README.md)

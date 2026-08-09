@@ -82,3 +82,9 @@ a = 20;                 //varible's value remains at the same place
 
 **Const, Let, Var**
 `Just be careful not to call the the variable before intilaization thats it. Don't use Var.`
+
+---
+
+**Next →** [tdz.md](tdz.md)
+
+🏠 **Back to README** [README.md](../../README.md)

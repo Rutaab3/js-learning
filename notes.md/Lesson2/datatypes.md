@@ -65,3 +65,9 @@
       code
    }
 ```
+
+---
+
+**Next →** [dynamic-typing.md](dynamic-typing.md)
+
+🏠 **Back to README** [README.md](../../README.md)

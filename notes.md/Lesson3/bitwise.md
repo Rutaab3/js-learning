@@ -39,3 +39,9 @@ true && false   // logical AND -> false
 > **Takeaway**
 
 `You don't need to memorize any of this yet. Just remember these symbols exist, they operate on binary — not true/false logic — and you can look them up properly whenever a real need for them shows up.`
+
+---
+
+**Next →** [logicpatterns.md](../Lesson4/logicpatterns.md)
+
+🏠 **Back to README** [README.md](../../README.md)

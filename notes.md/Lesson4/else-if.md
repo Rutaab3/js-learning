@@ -78,3 +78,9 @@ Grade:C  Marks:140 Percentage:70%
 - If both score and attendance are low (<= 40), it directly assigns an F grade.
 - Finally, it uses a series of else-if statements to determine the grade based on the total marks, with a fallback else for any cases that don't meet the previous conditions.
 
+---
+
+**Next →** [switch-case.md](switch-case.md)
+
+🏠 **Back to README** [README.md](../../README.md)
+

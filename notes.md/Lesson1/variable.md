@@ -50,4 +50,10 @@ _In JavaScript, you create these boxes using keywords: `var , let , or const`._
 *Use `Let` only when you plan to redeclare the value again.* <br> 
 *Avoid `Var` its part of old ES script and creates bug.*
 
+---
+
+**Next →** [scopes.md](scopes.md)
+
+🏠 **Back to README** [README.md](../../README.md)
+
 

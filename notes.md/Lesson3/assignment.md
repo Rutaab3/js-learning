@@ -66,3 +66,9 @@ let a = 5; // a is assigned the value 5
 a %= 3;    // a is now assigned the value 2
 ```
 
+---
+
+**Next →** [comparison.md](comparison.md)
+
+🏠 **Back to README** [README.md](../../README.md)
+

@@ -87,3 +87,9 @@ These `(!=) not equal to` and `(!==) strictly not equal to` operators checks if 
 ``` 
 
 `Conclusion:` `!==` is always preferred in modern JavaScript to avoid unexpected type coercion.
+
+---
+
+**Next →** [logical.md](logical.md)
+
+🏠 **Back to README** [README.md](../../README.md)

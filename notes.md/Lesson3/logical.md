@@ -45,3 +45,9 @@ The logical NOT operator (`!`) negates the value of a boolean expression. It ret
 !(5 < 3);   // true (5 < 3 is false, so negating it gives true)
 ```
 
+---
+
+**Next →** [unary.md](unary.md)
+
+🏠 **Back to README** [README.md](../../README.md)
+

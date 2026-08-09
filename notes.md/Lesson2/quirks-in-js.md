@@ -21,3 +21,9 @@ typeof NaN             `returns`     "number"
 
 
 *These are some unusual output of some equations you can practice more yourself.*
+
+---
+
+**Next →** [operators.md](../Lesson3/operators.md)
+
+🏠 **Back to README** [README.md](../../README.md)

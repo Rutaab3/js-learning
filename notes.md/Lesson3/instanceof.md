@@ -21,3 +21,9 @@ console.log(a2 instanceof a1); // returns true
 ```
 
 > In this example, `a2` is an instance of the constructor function `a1`, so `a2 instanceof a1` returns `true`. The `instanceof` operator is particularly useful when working with inheritance and polymorphism in JavaScript, allowing you to check if an object is derived from a specific constructor or class.
+
+---
+
+**Next →** [ternary.md](ternary.md)
+
+🏠 **Back to README** [README.md](../../README.md)

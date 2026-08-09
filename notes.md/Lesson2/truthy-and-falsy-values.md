@@ -54,3 +54,9 @@ console.log("Runs");
 2. *`The Conflict:` Developers would write code like if **(document.all) { IE code } else { standard code }** to detect if the user was on IE.*
 3. *`The Fix:` When modern browsers started supporting document.all to be compatible with old websites, they didn't want to trigger those old "IE-only" code paths.*
 4. *`The Result:` Browsers made document.all falsy so that those old if checks would fail, forcing the browser to use the modern, standard code instead.*
+
+---
+
+**Next →** [type-coercion.md](type-coercion.md)
+
+🏠 **Back to README** [README.md](../../README.md)

@@ -23,3 +23,9 @@ console.log(typeof nul); // returns "object" (this is a known quirk in JavaScrip
 ```
 
 > The `typeof` operator is particularly useful when you need to ensure that a value is of the expected type before performing operations on it. It helps prevent runtime errors that might occur if you try to perform an operation on a value of an unexpected type.
+
+---
+
+**Next →** [instanceof.md](instanceof.md)
+
+🏠 **Back to README** [README.md](../../README.md)

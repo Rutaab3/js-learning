@@ -79,3 +79,9 @@ a is bigger     //the variable is fetched from block
 ```
 
 `(both values fetched from block that is a bug)`
+
+---
+
+**Next →** [reassign-redeclare.md](reassign-redeclare.md)
+
+🏠 **Back to README** [README.md](../../README.md)

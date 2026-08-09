@@ -31,3 +31,9 @@ a = function( ){ }        //function
 > <h3> Q. Which typing is best?
 
 `A. Static typing is the known winner as dynamic typing will cause error that are difficult ta takle specially if you have a massive code base.`
+
+---
+
+**Next →** [typeof-operator.md](typeof-operator.md)
+
+🏠 **Back to README** [README.md](../../README.md)
