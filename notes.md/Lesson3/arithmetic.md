@@ -52,7 +52,7 @@ let power = 5 ** 3; // power is 125
 
 **Next →** [assignment.md](assignment.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)
 
 
 

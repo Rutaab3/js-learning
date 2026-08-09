@@ -69,4 +69,4 @@ switch(sizeCode) {
 
 **Next →** [return-early-pattern.md](return-early-pattern.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

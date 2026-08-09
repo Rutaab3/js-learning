@@ -44,4 +44,4 @@ true && false   // logical AND -> false
 
 **Next →** [logicpatterns.md](../Lesson4/logicpatterns.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

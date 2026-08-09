@@ -28,4 +28,4 @@ console.log(typeof nul); // returns "object" (this is a known quirk in JavaScrip
 
 **Next →** [instanceof.md](instanceof.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

@@ -26,4 +26,4 @@ console.log(a2 instanceof a1); // returns true
 
 **Next →** [ternary.md](ternary.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

@@ -88,4 +88,4 @@ console.log(a,b); // returns 7 12
 
 **Next →** [typeof.md](typeof.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

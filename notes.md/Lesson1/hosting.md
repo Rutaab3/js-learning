@@ -87,4 +87,4 @@ a = 20;                 //varible's value remains at the same place
 
 **Next →** [tdz.md](tdz.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

@@ -21,7 +21,7 @@ let a = "Rutaab"          //string
 a = 99                    //number
 a = true                  //boolean
 a = undefined             //undefined
-a = null                  //object â† known bug
+a = null                  //object ← known bug
 a = [ ]                   //object
 a = { }                   //object
 a = function( ){ }        //function
@@ -36,4 +36,4 @@ a = function( ){ }        //function
 
 **Next →** [typeof-operator.md](typeof-operator.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

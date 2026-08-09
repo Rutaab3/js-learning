@@ -138,4 +138,4 @@ instanceof: // Example: obj instanceof Object
 
 **Next →** [arithmetic.md](arithmetic.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

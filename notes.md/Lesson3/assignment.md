@@ -70,5 +70,5 @@ a %= 3;    // a is now assigned the value 2
 
 **Next →** [comparison.md](comparison.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)
 

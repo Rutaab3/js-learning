@@ -26,4 +26,4 @@ typeof NaN             `returns`     "number"
 
 **Next →** [operators.md](../Lesson3/operators.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

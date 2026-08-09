@@ -10,7 +10,7 @@
 2. _typeof 99_                      `number`
 3. _typeof true_                    `boolean`
 4. _typeof undefined_               `undefined`
-5. _typeof null_                    `object â† known bug`
+5. _typeof null_                    `object ← known bug`
 6. _typeof [  ]_                    `object`
 7. _typeof {  }_                    `object`
 8. _typeof function(  ){  }_        `function`
@@ -43,4 +43,4 @@ c = boolean
 
 **Next →** [truthy-and-falsy-values.md](truthy-and-falsy-values.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

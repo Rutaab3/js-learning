@@ -92,4 +92,4 @@ These `(!=) not equal to` and `(!==) strictly not equal to` operators checks if 
 
 **Next →** [logical.md](logical.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

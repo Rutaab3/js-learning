@@ -82,5 +82,5 @@ Grade:C  Marks:140 Percentage:70%
 
 **Next →** [switch-case.md](switch-case.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)
 

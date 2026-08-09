@@ -8,9 +8,9 @@
 > **if var variable is declared it can be redecleared easily. Thats why it best to not use var.**
 
 ```js
-var a = 20; //✅
-var a = 30; //✅
-var a = 40; //✅
+var a = 20;
+var a = 30;
+var a = 40;
 ```
 
 ```js
@@ -26,8 +26,8 @@ output = 40;
 > **if let variable is declared it can't be redecleared.**
 
 ```js
-let a = 20; //❌
-let a = 30; //❌
+let a = 20;
+let a = 30;
 ```
 `(it will underline both 'a' as error bcz it can't be redeclared)`
 
@@ -39,8 +39,8 @@ output = `Uncaught SyntaxError: Identifier 'a' has already been declared;`
 **another approch to redeclear a variable.**
 
 ```js
-let a = 20; ✅
-a = 30; ✅
+let a = 20;
+a = 30;
 ```
 `(you can again reintilze the value according to your needs)`
 
@@ -57,8 +57,8 @@ output = 30;
 > **if const variable is declared it can't be redecleared.**
 
 ```js
-const a = 20; //❌
-const a = 30; //❌
+const a = 20;
+const a = 30;
 ```
 `(it will underline both 'a' as error bcz it can't be redeclared)`
 
@@ -70,8 +70,8 @@ output = `Uncaught SyntaxError: Identifier 'a' has already been declared`
 **another approch to redeclear a variable.**
 
 ```js
-const a = 20; ✅
-a = 30; ✅
+const a = 20;
+a = 30;
 ```
 `(it won't underline both 'a' as error but will throw TypeError on compilation as it cannot be reinitialize(reassigned) again)`
 
@@ -114,10 +114,10 @@ student = {};
 console.log(student);
 
 output = `Uncaught TypeError: Assignment to constant variable.`
+```
 
 ---
 
 **Next →** [hosting.md](hosting.md)
 
-🏠 **Back to README** [README.md](../../README.md)
-```
+**Back to README** [README.md](../../README.md)

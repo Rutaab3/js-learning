@@ -34,4 +34,4 @@ false (for example, if age were 16)
 
 **Next →** [bitwise.md](bitwise.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

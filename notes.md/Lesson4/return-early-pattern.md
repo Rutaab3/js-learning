@@ -47,4 +47,4 @@ console.log(power(isGeneratorFueled,isGridOn,solarBatteryLevel,currentTemp));
 
 **Next →** [loops.md](../lesson5/loops.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

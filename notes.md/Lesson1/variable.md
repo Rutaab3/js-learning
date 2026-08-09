@@ -54,6 +54,6 @@ _In JavaScript, you create these boxes using keywords: `var , let , or const`._
 
 **Next →** [scopes.md](scopes.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)
 
 

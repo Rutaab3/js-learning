@@ -84,4 +84,4 @@ a is bigger     //the variable is fetched from block
 
 **Next →** [reassign-redeclare.md](reassign-redeclare.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

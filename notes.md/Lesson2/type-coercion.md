@@ -43,4 +43,4 @@ Output: NaN
 
 **Next →** [quirks-in-js.md](quirks-in-js.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

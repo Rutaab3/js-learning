@@ -16,4 +16,4 @@ let a = 10;           //declaration of variable
 
 **Next →** [datatypes.md](../Lesson2/datatypes.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)

@@ -49,5 +49,5 @@ The logical NOT operator (`!`) negates the value of a boolean expression. It ret
 
 **Next →** [unary.md](unary.md)
 
-🏠 **Back to README** [README.md](../../README.md)
+**Back to README** [README.md](../../README.md)
 
